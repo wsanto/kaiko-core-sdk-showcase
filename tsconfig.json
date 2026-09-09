@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "preserveConstEnums": true,
+        "strictNullChecks": true,
+        "sourceMap": true,
+        "allowJs": true,
+        "skipLibCheck": true,
+        "target": "es2024",
+        "outDir": ".build",
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "esModuleInterop": true,
+        "lib": [
+            "DOM",
+            "es2015"
+        ],
+        "rootDir": "./src",
+        "paths": {
+            "@auth/*": [
+                "./src/auth/*"
+            ],
+            "@emotion/*": [
+                "./src/emotion/*"
+            ],
+            "@billing/*": [
+                "./src/billing/*"
+            ],
+            "@shared/*": [
+                "./src/shared/*"
+            ]
+        }
+    },
+    "include": [
+        "src/auth/**/*",
+        "src/emotion/**/*",
+        "src/billing/**/*",
+        "src/shared/**/*"
+    ],
+    "exclude": [
+        "**/*.spec.ts",
+        "**/*.test.ts",
+        "node_modules"
+    ]
+}
